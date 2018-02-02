@@ -1,0 +1,52 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <HBox alignment="TOP_RIGHT">
+        <Text text="Timer" fx:id="timer"/>
+    </HBox>
+    <HBox spacing="20" GridPane.rowIndex="0">
+        <Text  fx:id="cashOwned"/>
+    </HBox>
+    <HBox spacing="80" GridPane.rowIndex="1" >
+        <Text  fx:id="priceApple" />
+        <Text  fx:id="priceOrange" />
+        <Text  fx:id="priceBanana" />
+        <Text  fx:id="priceGrape" />
+    </HBox>
+    <HBox spacing="50" GridPane.rowIndex="2">
+        <Button onAction="#clickBuyApple" fx:id="btnBuyApple" text="Buy Apple" />
+        <Button onAction="#clickBuyOrange" fx:id="btnBuyOrange" text="Buy Orange" />
+        <Button onAction="#clickBuyBanana" fx:id="btnBuyBanana" text="Buy Banana" />
+        <Button onAction="#clickBuyGrape" fx:id="btnBuyGrape" text="Buy Grape" />
+    </HBox>
+    <HBox spacing="30" GridPane.rowIndex="3">
+        <Text text="Apples" fx:id="boxApple" />
+        <Text text="Oranges" fx:id="boxOrange" />
+        <Text text="Bananas" fx:id="boxBanana" />
+        <Text text="Grapes" fx:id="boxGrape" />
+    </HBox>
+    <HBox spacing="50" GridPane.rowIndex="4">
+        <Button onAction="#clickSellApple" fx:id="btnSellApple" text="Sell Apple" />
+        <Button onAction="#clickSellOrange" fx:id="btnSellOrange" text="Sell Orange" />
+        <Button onAction="#clickSellBanana" fx:id="btnSellBanana" text="Sell Banana" />
+        <Button onAction="#clickSellGrape" fx:id="btnSellGrape" text="Sell Grape" />
+    </HBox>
+    <HBox spacing="20" GridPane.rowIndex="5">
+        <Text text="" fx:id="boxSellApple" />
+        <Text text="" fx:id="boxSellOrange" />
+        <Text text="" fx:id="boxSellBanana" />
+        <Text text="" fx:id="boxSellGrape" />
+    </HBox>
+
+
+
+
+
+
+</GridPane>
